@@ -1,0 +1,53 @@
+
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body {
+    max-width: 600px;
+    margin: auto;
+}
+#navbar {
+    margin-top: 20px;
+}
+#name {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#navbar li {
+    display: inline-block;
+    margin-left: 6px;
+    text-transform: uppercase;
+}
+#navbar ul {
+    margin-top: 0px;
+    float: right;
+}
+#about-me {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 60%  40%;
+    width: 100%;
+
+}
+#about-me img {
+    width: 100%;
+}
+#projects ul {
+    list-style: none ;
+}
+
+#projects li {
+    display: grid;
+    grid-template-columns: 20px auto;
+    justify-content: start;
+    align-items: center;
+
+  }
+  
+#projects li::before {
+    content: ">";
+    font-size: 10px;
+    color: #999;
+  }
