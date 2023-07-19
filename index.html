@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebpage</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
 </head>
+
+  
+
 <body>
     <header>
         <nav id="navbar">
             
             <div id="name">
-            <span>DAVID PEICHL</span>
+            <span title="Coolster Typ ever">DAVID PEICHL</span>
             </div>
-            
-            <ul id="menue">
+            <div id="menue-large">
+            <ul>
                   <li><a href="index.html#text">About Me</a></li>
                   <li><a href="index.html#projects">Projects</a></li>
                   <li><a href="index.html#skillSection">Skills</a></li>
                   <li><a href="contact.html">Contact</a></li>
             </ul>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="darkmode">
+              <span class="slider round"></span>
+            </label>
+
+
+
+            <label for="changeBackground">Change Background</label>
+            <input type="checkbox" id="changeBackground">
             
+            
+            <div id="menue-btn">
+              <div id="barOne"></div>
+              <div id="barTwo"></div>
+              <div id="barThree"></div>
+            </div>
+            <div id="dropdown">
+              <ul>
+                <li><a href="index.html#text">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skillSection">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -31,7 +60,7 @@
           <p>Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer, chiefly known for my work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
             I am one of the first to recognize that machines have applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine.
             In my free time I like to read about scientific developments, mathematics, and computational mathematics. I also like to take my chances of winning big.</p>
-          <p> fun fact i am conding for exampele seconds</p>
+          <div id="counter"></div>
         </div id="logo-image">
         <img src="ressources\images\SETBAKERS_LOGO_FINAL.png" alt="logo image" srcset="">
         </div>
@@ -69,4 +98,5 @@
         <span id="made">Made with  </span><img src="ressources/images/istockphoto-1148910293-612x612.jpg" alt=""><span id="country">  in Germany.</span>
     </footer>
 </body>
+
 </html>
